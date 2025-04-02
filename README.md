@@ -88,6 +88,8 @@ The first challenge was not having at least 2 cores on an EC2 instance in AWS, s
   docker run -d -p 8080:8080 --name airflow_container ubuntu
   ```
 
+![Imagen de Docker](https://github.com/nahuel-nunez-rojas/Pipeline-Airflow/blob/main/images/conteiner.png)
+
 ### 2. Update the system and install dependencies
 
 - Inside the container, run:
@@ -118,6 +120,8 @@ The first challenge was not having at least 2 cores on an EC2 instance in AWS, s
   ```
 - Access from the browser at: http://localhost:8080
 
+![Imagen de Airflow](https://github.com/nahuel-nunez-rojas/Pipeline-Airflow/blob/main/images/airflow.png)
+
 ### 5. Connect from VS Code to the container and write the Python code
 
 ### 6. Create the S3 bucket and configure credentials
@@ -130,6 +134,8 @@ The first challenge was not having at least 2 cores on an EC2 instance in AWS, s
   ```bash
   aws sts get-session-token
   ```
+
+![Imagen de S3](https://github.com/nahuel-nunez-rojas/Pipeline-Airflow/blob/main/images/bucket.png)
 
 ### 7. Test the pipeline and verify the upload to S3
 
